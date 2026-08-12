@@ -87,13 +87,24 @@ h1, h2, blockquote { font-family: Georgia, "Times New Roman", serif; font-weight
 .frame-two { right: 1rem; top: 0; transform: rotate(7deg); background: #5f3a3f; }
 .frame-feature { z-index: 2; width: min(27rem, 72%); aspect-ratio: 880 / 1216; overflow: hidden; }
 .frame-feature::after { content: ""; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(34,18,21,.72)); pointer-events: none; }
-.allaa-photo { object-fit: cover; object-position: 50% 32%; }
+.alaa-photo { object-fit: cover; object-position: 50% 32%; }
 .frame-feature span { position: relative; z-index: 2; }
 .frame-three { left: 28%; bottom: 0; transform: rotate(1deg); background: radial-gradient(circle at 60% 35%, #fff2d9, transparent 16%), linear-gradient(160deg, #4f292f, #ca6875 60%, #edbfac); }
 .film-frame:hover { z-index: 3; transform: rotate(0) translateY(-8px); }
 .memory-copy { color: #fff9ef; }
 .memory-copy blockquote { margin: 0 0 2rem; font-size: clamp(3.1rem, 5.6vw, 6rem); line-height: .93; }
 .memory-copy > p:last-child { max-width: 28rem; color: #ffe7df; font-family: Georgia, serif; line-height: 1.75; }
+
+.poetry-section { position: relative; min-height: 48rem; display: grid; place-content: center; text-align: center; overflow: hidden; color: #fdf3e8; background: radial-gradient(circle at 50% 45%, #70404a 0, #351d23 55%, #241418 100%); }
+.poetry-section::before, .poetry-section::after { content: ""; position: absolute; top: 50%; width: min(16vw, 13rem); height: 1px; background: linear-gradient(90deg, transparent, rgba(239,181,185,.5)); }
+.poetry-section::before { left: 3vw; }
+.poetry-section::after { right: 3vw; transform: rotate(180deg); }
+.poetry-ornament { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); color: rgba(239,181,185,.045); font-family: "Traditional Arabic", "Noto Naskh Arabic", serif; font-size: clamp(25rem, 55vw, 52rem); line-height: 1; pointer-events: none; }
+.poetry-kicker { position: relative; margin: 0 0 1rem; color: #dba8ad; font-family: "Traditional Arabic", "Noto Naskh Arabic", serif; font-size: 1rem; letter-spacing: .04em; }
+.poetry-section h2 { position: relative; margin: 0 0 2.5rem; color: var(--blush); font-family: "Traditional Arabic", "Noto Naskh Arabic", serif; font-size: clamp(4rem, 8vw, 7rem); letter-spacing: 0; }
+.arabic-poem { position: relative; display: grid; gap: .85rem; font-family: "Traditional Arabic", "Noto Naskh Arabic", "Times New Roman", serif; font-size: clamp(1.25rem, 2.3vw, 2rem); line-height: 1.9; }
+.arabic-poem p { margin: 0; }
+.name-meaning { position: relative; margin: 2.7rem 0 0; color: #c99da2; font-family: "Traditional Arabic", "Noto Naskh Arabic", serif; font-size: 1rem; }
 
 .timeline { position: relative; padding-block: 9rem 11rem; background: var(--paper); }
 .centered { text-align: center; }
@@ -140,6 +151,7 @@ h1, h2, blockquote { font-family: Georgia, "Times New Roman", serif; font-weight
   .memory-section { grid-template-columns: 1fr; }
   .film-strip { height: 33rem; }
   .memory-copy { max-width: 38rem; }
+  .poetry-section::before, .poetry-section::after { display: none; }
   .timeline-line { display: none; }
   .timeline-list article { width: 88%; }
   .timeline-list article:nth-child(even) { margin-left: 12%; }

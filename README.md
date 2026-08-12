@@ -1,4 +1,4 @@
-# Happy Birthday, Allaa ✦
+# Happy Birthday, Alaâ ✦
 
 A cinematic, interactive birthday surprise built with Next.js and TypeScript.
 
