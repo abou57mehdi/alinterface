@@ -56,7 +56,8 @@ h1, h2, blockquote { font-family: Georgia, "Times New Roman", serif; font-weight
 .hero h1 em { display: block; margin-left: clamp(1rem, 12vw, 10rem); color: var(--rose); font-weight: 400; }
 .hero-message { width: min(31rem, 80%); margin: 3rem 0 0 clamp(1rem, 12vw, 10rem); font-family: Georgia, serif; font-size: clamp(1rem, 1.4vw, 1.25rem); line-height: 1.7; color: #63484b; }
 .orbit-mark { position: absolute; right: clamp(2rem, 8vw, 8rem); top: 50%; width: 9rem; aspect-ratio: 1; border: 1px solid rgba(127,47,61,.25); border-radius: 50%; display: grid; place-items: center; color: var(--rose); }
-.orbit-mark span { font-size: 1.8rem; }
+.orbit-photo { position: relative; width: 7.5rem; height: 7.5rem; overflow: hidden; border-radius: 50%; box-shadow: inset 0 0 0 4px rgba(255,255,255,.5); }
+.orbit-photo img { object-fit: cover; object-position: 50% 32%; }
 .orbit-mark p { position: absolute; inset: -1.1rem; margin: 0; font-size: .54rem; letter-spacing: .18em; animation: spin 18s linear infinite; }
 .scroll-cue { position: absolute; left: clamp(1.5rem,6vw,7rem); bottom: 2rem; display: flex; align-items: center; gap: 1rem; color: inherit; text-decoration: none; text-transform: uppercase; letter-spacing: .15em; font-size: .58rem; }
 .scroll-cue i { width: 5rem; height: 1px; background: currentColor; transition: width .3s; }
@@ -83,7 +84,11 @@ h1, h2, blockquote { font-family: Georgia, "Times New Roman", serif; font-weight
 .film-frame { position: absolute; width: min(24rem, 70%); aspect-ratio: 4 / 5; display: flex; align-items: end; padding: 1rem; border: .7rem solid #fff9ef; box-shadow: 0 20px 55px rgba(71,31,37,.22); background: radial-gradient(circle at 65% 25%, rgba(255,255,255,.6), transparent 20%), linear-gradient(145deg, #722c38, #e9afb1 52%, #f2cfaa); transition: transform .4s; }
 .film-frame span { width: 100%; padding-top: .7rem; border-top: 1px solid rgba(255,255,255,.5); color: white; font-family: Georgia, serif; font-size: .8rem; font-style: italic; }
 .frame-one { left: 0; top: 3rem; transform: rotate(-8deg); }
-.frame-two { right: 1rem; top: 0; transform: rotate(7deg); background: radial-gradient(circle at 35% 30%, #f6d8c9, transparent 17%), linear-gradient(135deg, #ae5061, #40252b 75%); }
+.frame-two { right: 1rem; top: 0; transform: rotate(7deg); background: #5f3a3f; }
+.frame-feature { z-index: 2; width: min(27rem, 72%); aspect-ratio: 880 / 1216; overflow: hidden; }
+.frame-feature::after { content: ""; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(34,18,21,.72)); pointer-events: none; }
+.allaa-photo { object-fit: cover; object-position: 50% 32%; }
+.frame-feature span { position: relative; z-index: 2; }
 .frame-three { left: 28%; bottom: 0; transform: rotate(1deg); background: radial-gradient(circle at 60% 35%, #fff2d9, transparent 16%), linear-gradient(160deg, #4f292f, #ca6875 60%, #edbfac); }
 .film-frame:hover { z-index: 3; transform: rotate(0) translateY(-8px); }
 .memory-copy { color: #fff9ef; }
@@ -114,10 +119,10 @@ h1, h2, blockquote { font-family: Georgia, "Times New Roman", serif; font-weight
 .signature span { color: var(--blush); }
 
 .letter-backdrop { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 1rem; background: rgba(25,11,15,.78); backdrop-filter: blur(14px); animation: fadeIn .35s ease; }
-.love-letter { position: relative; width: min(42rem, 100%); max-height: 88svh; overflow: auto; padding: clamp(2rem, 6vw, 5rem); border-radius: 2px; background: #fff9ef; box-shadow: 0 35px 90px rgba(0,0,0,.38); animation: letterIn .5s cubic-bezier(.2,.8,.2,1); }
-.love-letter::after { content: "♡"; position: absolute; right: 2rem; bottom: 1rem; color: rgba(191,83,100,.15); font: 6rem Georgia, serif; }
-.love-letter h2 { margin: 0 0 2rem; color: var(--rose-dark); font-size: clamp(3rem, 7vw, 5rem); }
-.love-letter > p:not(.eyebrow):not(.letter-signoff) { font-family: Georgia, serif; color: #5e4447; line-height: 1.85; }
+.birthday-note { position: relative; width: min(42rem, 100%); max-height: 88svh; overflow: auto; padding: clamp(2rem, 6vw, 5rem); border-radius: 2px; background: #fff9ef; box-shadow: 0 35px 90px rgba(0,0,0,.38); animation: letterIn .5s cubic-bezier(.2,.8,.2,1); }
+.birthday-note::after { content: "✦"; position: absolute; right: 2rem; bottom: 1rem; color: rgba(191,83,100,.15); font: 6rem Georgia, serif; }
+.birthday-note h2 { margin: 0 0 2rem; color: var(--rose-dark); font-size: clamp(3rem, 7vw, 5rem); }
+.birthday-note > p:not(.eyebrow):not(.letter-signoff) { font-family: Georgia, serif; color: #5e4447; line-height: 1.85; }
 .letter-signoff { margin-top: 2rem; color: var(--rose-dark); font-family: Georgia, serif; font-size: 1.25rem; line-height: 1.6; }
 .close-letter { position: absolute; top: 1rem; right: 1rem; width: 2.5rem; height: 2.5rem; border: 0; border-radius: 50%; background: #f1e1d8; cursor: pointer; font-size: 1.4rem; }
 

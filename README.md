@@ -1,4 +1,4 @@
-# For My Favorite Person ♡
+# Happy Birthday, Allaa ✦
 
 A cinematic, interactive birthday surprise built with Next.js and TypeScript.
 
@@ -6,9 +6,9 @@ A cinematic, interactive birthday surprise built with Next.js and TypeScript.
 
 - Gift-style opening reveal with confetti
 - Editorial birthday hero and smooth story flow
-- Interactive reasons-to-love-you cards
+- Interactive reasons-you-are-unforgettable cards
 - Layered memory-film composition
-- Relationship timeline and sealed love letter finale
+- Story timeline and sealed birthday note finale
 - Responsive, accessible, and reduced-motion friendly
 
 ## Run locally

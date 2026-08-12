@@ -8,8 +8,8 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "For My Favorite Person ♡",
-  description: "A little birthday universe, made with all my heart.",
+  title: "Happy Birthday, Allaa ✦",
+  description: "A little birthday universe, made especially for Allaa.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -1,19 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const reasons = [
-  { number: "01", title: "Your heart", text: "The way you care so deeply makes the whole world feel softer." },
+  { number: "01", title: "Your presence", text: "There is something about your energy that makes every place feel brighter." },
   { number: "02", title: "Your laugh", text: "My favorite sound — especially when I am the reason behind it." },
   { number: "03", title: "Your magic", text: "You turn ordinary days into memories I never want to lose." },
-  { number: "04", title: "Simply you", text: "Every little thing that makes you you is something I choose, always." },
+  { number: "04", title: "Simply you", text: "Confident, kind, a little unpredictable — and completely unforgettable." },
 ];
 
 const moments = [
-  { label: "The beginning", text: "The day my life became brighter without me even realizing it." },
-  { label: "Every little moment", text: "The late talks, the silly jokes, the comfortable silences — all of it." },
+  { label: "The beginning", text: "The moment I realized there was something genuinely special about you." },
+  { label: "Every little moment", text: "The conversations, the jokes, and the easy moments that never feel ordinary." },
   { label: "Right now", text: "Celebrating the most beautiful soul and another year of her magic." },
-  { label: "What comes next", text: "More adventures, more laughter, and a thousand moments still waiting for us." },
+  { label: "What comes next", text: "More good conversations, more laughter, and whatever fun the next chapter brings." },
 ];
 
 const confetti = Array.from({ length: 36 }, (_, index) => ({
@@ -48,7 +49,7 @@ export default function Home() {
 
       <section className="opening" aria-label="Open your birthday surprise">
         <div className="opening-stars" aria-hidden="true">✦　·　✧　·　✦</div>
-        <p className="eyebrow">A tiny universe, made with love</p>
+        <p className="eyebrow">A tiny universe, made for Allaa</p>
         <div className="opening-title" aria-label="For the one who makes everything brighter">
           <span>For the one who makes</span>
           <em>everything brighter.</em>
@@ -57,7 +58,7 @@ export default function Home() {
           <span className="open-button-heart" aria-hidden="true">♥</span>
           <span>Open your surprise</span>
         </button>
-        <p className="opening-note">Made only for you · with all my heart</p>
+        <p className="opening-note">One page · one beautiful birthday girl</p>
       </section>
 
       <div className="confetti" aria-hidden="true">
@@ -69,23 +70,23 @@ export default function Home() {
       <div className="story" id="birthday">
         <header className="hero section-pad">
           <nav className="mini-nav" aria-label="Birthday page sections">
-            <span className="monogram">M ♡ Y</span>
-            <span className="nav-date">Your special day · forever</span>
+            <span className="monogram">A ✦ 21</span>
+            <span className="nav-date">Allaa&apos;s day · her moment</span>
           </nav>
           <div className="hero-copy">
             <p className="eyebrow">Today, the universe celebrates you</p>
             <h1>
               Happy Birthday,
-              <em>my love.</em>
+              <em>Allaa.</em>
             </h1>
             <p className="hero-message">
-              If I could gift you one thing, it would be the chance to see yourself through my eyes —
-              wonderful, rare, and endlessly loved.
+              If I could gift you one thing today, it would be the chance to see yourself through my eyes —
+              bright, magnetic, and genuinely one of a kind.
             </p>
           </div>
           <div className="orbit-mark" aria-hidden="true">
-            <span>✦</span>
-            <p>MY FAVORITE PERSON · MY FAVORITE PERSON ·</p>
+            <span className="orbit-photo"><Image src="/allaa-birthday.jpeg" alt="" fill sizes="144px" priority /></span>
+            <p>THE BIRTHDAY GIRL · THE BIRTHDAY GIRL ·</p>
           </div>
           <a className="scroll-cue" href="#reasons" aria-label="Scroll to your birthday story">
             <span>Discover your story</span><i aria-hidden="true" />
@@ -95,7 +96,7 @@ export default function Home() {
         <section className="reasons section-pad" id="reasons">
           <div className="section-heading">
             <p className="eyebrow">A few of a million reasons</p>
-            <h2>Why my world is<br /><em>better with you.</em></h2>
+            <h2>Why you are<br /><em>impossible to forget.</em></h2>
           </div>
           <div className="reason-grid">
             {reasons.map((reason) => (
@@ -113,19 +114,22 @@ export default function Home() {
         <section className="memory-section section-pad">
           <div className="film-strip" aria-label="Our memories">
             <div className="film-frame frame-one"><span>our favorite kind of chaos</span></div>
-            <div className="film-frame frame-two"><span>wherever we are, together</span></div>
+            <div className="film-frame frame-two frame-feature">
+              <Image className="allaa-photo" src="/allaa-birthday.jpeg" alt="Allaa smiling with her birthday cake and balloons" fill sizes="(max-width: 580px) 68vw, 430px" />
+              <span>Allaa, in her element ✦</span>
+            </div>
             <div className="film-frame frame-three"><span>the moments between moments</span></div>
           </div>
           <div className="memory-copy">
-            <p className="eyebrow">Us, in every lifetime</p>
-            <blockquote>“I would find you in every version of this world.”</blockquote>
-            <p>Here is to the photographs we have taken, the ones still waiting for us, and the beautiful life happening between them.</p>
+            <p className="eyebrow">Main-character energy</p>
+            <blockquote>“Some people simply make the moment better.”</blockquote>
+            <p>This photograph deserved more than a place in a gallery. It deserved its own scene — just like the girl in it.</p>
           </div>
         </section>
 
         <section className="timeline section-pad">
           <div className="section-heading centered">
-            <p className="eyebrow">Our little infinity</p>
+            <p className="eyebrow">A story worth watching</p>
             <h2>Some things are<br /><em>written in the stars.</em></h2>
           </div>
           <div className="timeline-line" aria-hidden="true" />
@@ -149,7 +153,7 @@ export default function Home() {
             <span className="wax-seal" aria-hidden="true">♥</span>
             <span>Read your letter</span>
           </button>
-          <p className="signature">Forever yours <span>♡</span></p>
+          <p className="signature">Enjoy your day, princess <span>✦</span></p>
         </section>
       </div>
 
@@ -157,14 +161,14 @@ export default function Home() {
         <div className="letter-backdrop" role="presentation" onMouseDown={(event) => {
           if (event.target === event.currentTarget) setLetterOpen(false);
         }}>
-          <article className="love-letter" role="dialog" aria-modal="true" aria-labelledby="letter-title">
-            <button className="close-letter" type="button" onClick={() => setLetterOpen(false)} aria-label="Close love letter">×</button>
-            <p className="eyebrow">For my favorite person</p>
-            <h2 id="letter-title">My love,</h2>
-            <p>Today is about celebrating you — your beautiful heart, your fearless dreams, and the light you bring into every room you enter.</p>
-            <p>Thank you for being my peace and my adventure, my safest place and my favorite surprise. Loving you is the easiest, most beautiful thing I have ever done.</p>
-            <p>I hope this year brings you everything you quietly wish for. And through every new chapter, I hope you know you will never have to walk alone.</p>
-            <p className="letter-signoff">Happy birthday, beautiful.<br /><em>With all of me, always.</em></p>
+          <article className="birthday-note" role="dialog" aria-modal="true" aria-labelledby="letter-title">
+            <button className="close-letter" type="button" onClick={() => setLetterOpen(false)} aria-label="Close birthday note">×</button>
+            <p className="eyebrow">Especially for Allaa</p>
+            <h2 id="letter-title">Beautiful girl,</h2>
+            <p>Today is about celebrating you — your confidence, your ambitions, and that unmistakable energy you bring wherever you go.</p>
+            <p>I am genuinely glad I get to know you. You have a way of making conversations better, moments lighter, and ordinary days far more interesting.</p>
+            <p>I hope 21 brings you the opportunities you deserve, the peace you need, and enough unexpected happiness to keep that smile exactly where it belongs.</p>
+            <p className="letter-signoff">Happy birthday, Allaa.<br /><em>Stay exactly this remarkable.</em></p>
           </article>
         </div>
       )}
