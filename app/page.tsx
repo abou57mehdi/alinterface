@@ -179,10 +179,11 @@ export default function Home() {
             <button className="close-letter" type="button" onClick={() => setLetterOpen(false)} aria-label="Close birthday note">×</button>
             <p className="eyebrow">Especially for Alaâ</p>
             <h2 id="letter-title">Alaâ,</h2>
-            <p>Today is yours. You have confidence, ambition, and an energy that is hard to miss.</p>
-            <p>I am glad I am getting to know you. You make conversations better, and ordinary days become much more interesting when you are around.</p>
-            <p>I hope 21 brings you the opportunities you deserve and plenty of unexpected happiness. Keep that smile exactly where it belongs.</p>
-            <p className="letter-signoff">Happy birthday.<br /><em>Stay exactly this remarkable.</em></p>
+            <p>As the eldest daughter, taking care of everyone else has become second nature to you. You look after your siblings, check that they are okay, and make sure they have someone they can count on.</p>
+            <p>But you do not always have to be the strong one with me. Let me take care of you sometimes. I want to be someone you can lean on, someone who listens, and a safe place where you can breathe without carrying everything at once.</p>
+            <p>I like listening when you talk about your father or tell me stories from your childhood. Those details matter to me. Every story lets me understand you a little better, and I will always treat that trust gently.</p>
+            <p>You spend so much time being there for the people around you. Today, let someone be there for you too.</p>
+            <p className="letter-signoff">Happy birthday, Alaâ.<br /><em>You deserve to feel cared for too.</em></p>
           </article>
         </div>
       )}
